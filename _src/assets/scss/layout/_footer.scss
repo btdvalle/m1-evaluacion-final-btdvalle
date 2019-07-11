@@ -1,12 +1,27 @@
 @import 'core/variables';
 
 .footer{
+    position: relative;
     background: $color-bg-footer;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     color: $color-font-footer;
-    padding-top: 30px;
+    padding-top: 60px;
+
+    .scrollup{
+        position: absolute;
+        top:0;
+        left:50vh;
+        transform: translate(+50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: $color-bg-icons;
+    }
 
 
     .menu{
@@ -17,8 +32,11 @@
 
         
         &__link{
+            display: inline-block;
             text-decoration: none;
             color: $color-font-footer;
+            padding: 7px;
+            margin:1px;
         }
     }
 
