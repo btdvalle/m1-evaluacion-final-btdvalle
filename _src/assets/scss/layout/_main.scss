@@ -1,0 +1,46 @@
+@import "core/variables";
+
+.article {
+  .pretitle {
+    display: inline-block;
+    padding-top: 30px;
+    color: $color-pretitle-article;
+  }
+
+  &__title {
+    margin-top: 5px;
+  }
+}
+
+.grid {
+  background: $color-bg-grd;
+  font-size: 1.125rem;
+  
+
+  &__title{
+      text-align: center;
+      padding: 30px;
+      margin:0;
+  }
+
+  .option {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 200px;
+
+    &__title {
+      margin-bottom: 0;
+    }grid-column-gap: 
+
+    &__text {
+      margin-top: 10px;
+    }
+  }
+  
+  &__grid{
+  display: grid;
+    grid-template-columns: 6.5625rem;
+    grid-row: 1fr 1fr 1fr;
+  }
+}
