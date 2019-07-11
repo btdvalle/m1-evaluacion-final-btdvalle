@@ -1,9 +1,22 @@
 .btn__small {
   display: inline-block;
+  height: 45px;
   padding: 10px 25px;
   border: solid $color-btn 3px;
   border-radius: 1.5625rem;
   font-size: 1.25rem;
   color: $color-btn;
+  margin: 45px 0;
 }
 
+.btn__big{
+    display: inline-block;
+    padding: 10px 25px;
+    border: solid $color-btn 3px;
+    border-radius: 1.5625rem;
+    font-size: 1.25rem;
+    background: $color-btn;
+    color: $color-btn-font;
+    margin: 45px 0;
+
+}
