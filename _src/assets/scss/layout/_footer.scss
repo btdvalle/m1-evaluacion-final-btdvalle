@@ -1,0 +1,30 @@
+@import 'core/variables';
+
+.footer{
+    background: $color-bg-footer;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: $color-font-footer;
+    padding-top: 30px;
+
+
+    .menu{
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+
+        
+        &__link{
+            text-decoration: none;
+            color: $color-font-footer;
+        }
+    }
+
+    .copy{
+        margin-bottom: 45px;
+        text-align: center;
+
+    }
+}
