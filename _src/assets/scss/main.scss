@@ -1,20 +1,18 @@
-@import 'core/variables';
-@import 'layout/header';
-@import 'core/reset';
-@import 'layout/main';
-@import 'components/buttons';
-@import 'layout/footer';
+@import "core/variables";
+@import "layout/header";
+@import "core/reset";
+@import "layout/main";
+@import "components/buttons";
+@import "layout/footer";
 
-.margin{
-    margin:0 15px;
-    
-    @media all and(min-width:768px){
-        margin:0 40px;
- 
-    }
+.margin {
+  margin: 0 15px;
 
-    @media all and(min-width:1200px){
-        margin:0 275px;
- 
-    }
+  @media all and(min-width:768px) {
+    margin: 0 40px;
+  }
+
+  @media all and(min-width:1200px) {
+    margin: 0 275px;
+  }
 }

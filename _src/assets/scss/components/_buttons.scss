@@ -97,12 +97,11 @@
   border-radius: 50%;
 }
 
-.spinnerfooter{
+.spinnerfooter {
   bottom: 0;
 }
 
-
-.scroll:hover .spinner{
+.scroll:hover .spinner {
   background-color: none;
   border-top: 2px solid $color-btn;
   border-right: 3px solid $color-btn;
@@ -113,7 +112,7 @@
   animation-name: spinner;
 }
 
-.scrolldown{
+.scrolldown {
   margin: 50px;
 }
 
@@ -132,8 +131,7 @@
   border-radius: 50%;
   background: $color-bg-icons;
 
-
-  .link{
+  .link {
     padding: 10px;
     z-index: 99;
   }

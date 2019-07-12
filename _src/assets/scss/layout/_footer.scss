@@ -1,67 +1,64 @@
-@import 'core/variables';
+@import "core/variables";
 
-.footer{
-    position: relative;
+.footer {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 60px;
+  background: $color-bg-footer;
+  color: $color-font-footer;
+
+  @media all and (min-width: 768px) {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  @media all and (min-width: 1200px) {
+    justify-content: center;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin: 15px;
+    }
+
+    &__link {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-font-footer;
+      padding: 7px;
+      margin: 1px;
+    }
+  }
+
+  .copy {
+    margin-bottom: 45px;
+    text-align: center;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-top: 60px;
-    background: $color-bg-footer;
-    color: $color-font-footer;
 
-    @media all and (min-width:768px){
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
+    @media all and (min-width: 768px) {
+      order: -1;
     }
 
-    @media all and (min-width:1200px){
-        justify-content: center;
+    .small {
+      padding: 5px;
+
+      .heart {
+        color: $color-btn;
+      }
     }
-
-    .menu{
-        list-style: none;
-        padding: 0;
-        text-align: center;
-        margin-bottom: 30px;
-
-        @media all and (min-width:768px){
-            text-align: left;
-
-        }
-
-        @media all and (min-width:1200px){
-            margin: 15px;
-        }
-    
-
-        
-        &__link{
-            display: inline-block;
-            text-decoration: none;
-            color: $color-font-footer;
-            padding: 7px;
-            margin:1px;
-        }
-    }
-
-    .copy{
-        margin-bottom: 45px;
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-
-        @media all and (min-width:768px){
-            order: -1;
-    }
-
-        .small{
-            padding: 5px;
-
-            .heart{
-                color: $color-btn;
-            }
-        }
-    }
+  }
 }

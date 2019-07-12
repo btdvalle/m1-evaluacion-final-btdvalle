@@ -4,15 +4,14 @@
     <head>
         <meta charset="UTF-8" />
         <title>Evaluación</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="icon" href="favicon.png" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">gulp
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     
     <body>
-        <header class="header">
+        <header class="header" id="#top">
             <div class="menu"> <a href="#">
       <img
         class="menu__icon"
@@ -26,23 +25,25 @@
 
                 <p class="subtitle">In hac habitasse platea dictumst</p>
             </div>
-            <div class="scrolldown scroll"> <a href="#content">
-      <img src="assets/icons/ico-scroll-down.svg" alt="Ir al contenido"
-    /></a>
+            <div class="scrolldown scroll"> <a class="link" href="#content">
+      <img src="assets/icons/ico-scroll-down.svg" alt="Ir al contenido" />
+    </a>
 
+                <div class="spinner"></div>
             </div>
         </header>
-        <article id="content" class="article"> <small class="pretitle">Insomnia Tips</small>
+        <article id="content" class="article margin"> <small class="pretitle">Insomnia Tips</small>
 
              <h2 class="article__title">Looking Throught A Window</h2>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel velit laborum
-                at, aperiam nostrum excepturi ducimus dolor laboriosam distinctio.</p>
-            <div
-            class="btn btn__small">Go</div>
+            <p>Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+                luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+            <div class="btn btn__small"><a class="link" href="">Go</a>
+
+            </div>
         </article>
-        <div class="grid">
-             <h2 class="grid__title">3 Reasons To Purchase</h2>
+        <div class="grid margin">
+             <h2 class="grid__title"> Reasons To Purchase</h2>
 
             <div class="grid__grid">
                 <div class="option">
@@ -64,11 +65,15 @@
                     <p class="option__text">Aliquam in dolor et dolor</p>
                 </div>
             </div>
-            <div class="btn btn__big">More reasons</div>
+            <div class="btn btn__big"><a class="link" href="#"> More reasons</a>
+
+            </div>
         </div>
         <footer class="footer">
-            <div class="scrollup scroll"> <a href=""><img src="./assets/icons/ico-arrow.svg" alt="Volver arriba"/></a>
+            <div class="scrollup scroll"> <a class="link" href="#top"><img src="./assets/icons/ico-arrow.svg" alt="Volver arriba"
+    /></a>
 
+                <div class="spinner spinnerfooter"></div>
             </div>
             <nav class="nav">
                 <ul class="menu">
@@ -103,7 +108,7 @@
                 </ul>
             </div>
             <div class="copy"> <small class="small"> &copy; 2017 </small>
- <small class="small">we ♥ components</small>
+ <small class="small">we <span class="heart">❤</span> components</small>
 
             </div>
         </footer>

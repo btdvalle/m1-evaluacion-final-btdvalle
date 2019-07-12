@@ -19,7 +19,6 @@
   flex-flow: column nowrap;
   align-items: center;
 
-
   &__title {
     text-align: center;
     padding: 30px;
@@ -48,11 +47,10 @@
     grid-gap: 30px;
     margin: 0 70px;
 
-    @media all and (min-width:768px){
+    @media all and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       margin: 0 37.5px;
     }
-
   }
 }
