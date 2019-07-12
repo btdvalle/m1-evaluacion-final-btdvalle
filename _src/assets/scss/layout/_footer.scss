@@ -2,27 +2,12 @@
 
 .footer{
     position: relative;
-    background: $color-bg-footer;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    color: $color-font-footer;
     padding-top: 60px;
-
-    .scrollup{
-        position: absolute;
-        top:0;
-        left:50vh;
-        transform: translate(+50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        background: $color-bg-icons;
-    }
-
+    background: $color-bg-footer;
+    color: $color-font-footer;
 
     .menu{
         list-style: none;
@@ -43,6 +28,12 @@
     .copy{
         margin-bottom: 45px;
         text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
 
+        .small{
+            padding: 5px;
+        }
     }
 }

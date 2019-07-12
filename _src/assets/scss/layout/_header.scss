@@ -5,6 +5,7 @@
   justify-content: flex-end;
   height: 100vh;
   min-height: 12.5rem;
+  background-position: center;
   background-size: cover;
   background-image: url(../images/cover.jpg);
   color: $color-font-hero;
@@ -36,14 +37,5 @@
     text-align: center;
   }
 
-  .scrolldown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: $color-bg-icons;
-  }
+
 }

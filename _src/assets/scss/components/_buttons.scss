@@ -1,0 +1,41 @@
+@import 'core/variables';
+
+.btn__small {
+  border: solid $color-btn 3px;
+  color: $color-btn;
+}
+
+.btn__big{
+    background: $color-btn;
+    color: $color-btn-font;
+
+}
+
+.btn{
+  display: inline-block;
+  height: 45px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  margin: 45px 0;
+}
+
+.scrolldown {
+  margin: 50px;
+}
+
+.scrollup{
+  position: relative;
+  top:-60px;
+transform: translateY(-50%);
+  }
+
+.scroll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+  background: $color-bg-icons;
+}
