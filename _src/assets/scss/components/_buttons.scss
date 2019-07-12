@@ -43,6 +43,10 @@ to {
   @media all and (min-width:1200px){
     width: 160px;
   }
+
+  .link{
+    color: $color-btn;
+  }
 }
 
 .btn__big{
@@ -57,6 +61,10 @@ to {
     @media all and (min-width:1200px){
       width: 255px;
     }
+
+    .link{
+      color: $color-btn-font;
+    }
 }
 
 .btn{
@@ -64,10 +72,20 @@ to {
   justify-content: center;
   align-items: center;
   height: 45px;
-  padding: 10px 25px;
   border-radius: 25px;
   font-size: 1.25rem;
   margin: 45px 0;
+  transition: transform ease 0.5s;
+
+  .link{
+    text-decoration: none;
+    padding: 10px 25px;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    font-weight: bold;
+  }
 }
 
 .spinner{
