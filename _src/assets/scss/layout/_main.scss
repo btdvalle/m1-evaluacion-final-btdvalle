@@ -50,7 +50,12 @@
     @media all and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      margin: 0 37.5px;
+      grid-gap: 37.5px;
     }
+
+    @media all and (min-width: 1200px) {
+      grid-gap: 50px;
+    }
+
   }
 }

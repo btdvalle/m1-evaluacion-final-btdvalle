@@ -8,6 +8,8 @@
   padding-top: 60px;
   background: $color-bg-footer;
   color: $color-font-footer;
+  padding-bottom: 45px;
+
 
   @media all and (min-width: 768px) {
     flex-flow: row nowrap;
@@ -30,7 +32,7 @@
     }
 
     @media all and (min-width: 1200px) {
-      margin: 15px;
+      margin: 30px 15px;
     }
 
     &__link {
@@ -43,7 +45,6 @@
   }
 
   .copy {
-    margin-bottom: 45px;
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
@@ -51,6 +52,10 @@
 
     @media all and (min-width: 768px) {
       order: -1;
+    }
+
+    @media all and (min-width: 768px) {
+      padding-top: 30px;
     }
 
     .small {
