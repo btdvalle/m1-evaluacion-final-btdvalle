@@ -1,12 +1,12 @@
-@import 'core/variables';
+@import "core/variables";
 
-@keyframes spinner{
-from {
-    transform: rotate(0deg)
-} 
-to {
-    transform: rotate(1turn)
-}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .header .menu {
@@ -21,12 +21,11 @@ to {
   background: $color-bg-menu;
   transition: transform ease 3s;
 
-
   &__icon {
     width: 100%;
   }
 
-  &:hover{
+  &:hover {
     transform: scale(1.5);
   }
 }
@@ -36,38 +35,38 @@ to {
   color: $color-btn;
   width: 75px;
 
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     width: 90px;
   }
 
-  @media all and (min-width:1200px){
+  @media all and (min-width: 1200px) {
     width: 160px;
   }
 
-  .link{
+  .link {
     color: $color-btn;
   }
 }
 
-.btn__big{
-    background: $color-btn;
+.btn__big {
+  background: $color-btn;
+  color: $color-btn-font;
+  width: 185px;
+
+  @media all and (min-width: 768px) {
+    width: 210px;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 255px;
+  }
+
+  .link {
     color: $color-btn-font;
-    width: 185px;
-
-    @media all and (min-width:768px){
-      width: 210px;
-    }
-
-    @media all and (min-width:1200px){
-      width: 255px;
-    }
-
-    .link{
-      color: $color-btn-font;
-    }
+  }
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,18 +76,18 @@ to {
   margin: 45px 0;
   transition: transform ease 0.5s;
 
-  .link{
+  .link {
     text-decoration: none;
     padding: 10px 25px;
   }
 
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     font-weight: bold;
   }
 }
 
-.spinner{
+.spinner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,19 +107,13 @@ to {
   animation-name: spinner;
 }
 
-
-.scrolldown {
-  animation-play-state: paused;
-  animation-duration: infinite;
+.scrollup {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0px;
 }
 
-.scrollup{
-  position: relative;
-  top:-60px;
-transform: translateY(-50%);
-  }
-
-.scroll{
+.scroll {
   display: flex;
   justify-content: center;
   align-items: center;
