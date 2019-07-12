@@ -12,6 +12,7 @@
     @media all and (min-width:768px){
         flex-flow: row nowrap;
         justify-content: space-evenly;
+        align-items: flex-start;
     }
 
     @media all and (min-width:1200px){
