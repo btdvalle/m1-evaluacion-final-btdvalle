@@ -29,12 +29,29 @@
   .title {
     margin-bottom: 10px;
     text-align: center;
-    max-width: 15.625rem;
+    max-width: 250px;
     font-size: 2.625rem;
+    text-shadow: 0 2px rgba(0,0,0,0.2);
+
+    @media all and (min-width:768px){
+      font-size: 5rem; 
+      max-width: 500px;
+    }
+
+    @media all and (min-width:1200px){
+      font-size: 6.25rem; 
+      max-width: 750px;
+    }
   }
 
   .subtitle {
     text-align: center;
+
+    @media all and (min-width:768px){
+      font-size: 1.5rem; 
+    }
+
+
   }
 
 

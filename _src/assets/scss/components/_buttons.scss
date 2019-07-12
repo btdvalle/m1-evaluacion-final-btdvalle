@@ -3,16 +3,35 @@
 .btn__small {
   border: solid $color-btn 3px;
   color: $color-btn;
+  width: 75px;
+
+  @media all and (min-width:768px){
+    width: 90px;
+  }
+
+  @media all and (min-width:1200px){
+    width: 160px;
+  }
 }
 
 .btn__big{
     background: $color-btn;
     color: $color-btn-font;
+    width: 185px;
 
+    @media all and (min-width:768px){
+      width: 210px;
+    }
+
+    @media all and (min-width:1200px){
+      width: 255px;
+    }
 }
 
 .btn{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 45px;
   padding: 10px 25px;
   border-radius: 25px;
