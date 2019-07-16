@@ -1,14 +1,27 @@
 @import "core/variables";
 
 .article {
+  display: flex;
+  flex-flow: column nowrap;
+
   .pretitle {
     display: inline-block;
     padding-top: 30px;
     color: $color-pretitle-article;
+
   }
 
   &__title {
     margin-top: 5px;
+    order: -1;
+  }
+
+  &__content{
+    margin-bottom: 20px;
+
+    @media all and(min-width:768px) {
+      margin-bottom: 0;
+    }
   }
 }
 
